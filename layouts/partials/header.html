@@ -240,6 +240,14 @@
         </li>
       {{- end -}}
 
+      {{- with .Site.Params.zhihu -}}
+        <li class="social-item">
+          <a href="//www.zhihu.com/people/{{ . }}" rel="me" title="Zhihu" aria-label="Zhihu">
+            <span class="{{ $zhihuIcon }}" aria-hidden="true"></span>
+          </a>
+        </li>
+      {{- end -}}
+
       {{- with .Site.Params.weibo -}}
         <li class="social-item">
           <a href="//weibo.com/{{ . }}" rel="me" title="Weibo" aria-label="Weibo">
@@ -260,14 +268,6 @@
         <li class="social-item">
           <a href="//www.linkedin.com/in/{{ . }}" rel="me" title="LinkedIn" aria-label="LinkedIn">
             <span class="{{ $linkedinIcon }}" aria-hidden="true"></span>
-          </a>
-        </li>
-      {{- end -}}
-
-      {{- with .Site.Params.zhihu -}}
-        <li class="social-item">
-          <a href="//www.zhihu.com/people/{{ . }}" rel="me" title="Zhihu" aria-label="Zhihu">
-            <span class="{{ $zhihuIcon }}" aria-hidden="true"></span>
           </a>
         </li>
       {{- end -}}
